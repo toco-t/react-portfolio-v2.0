@@ -1,0 +1,94 @@
+header {
+	height: 100vh;
+	padding-top: 7rem;
+}
+
+.header__container {
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+
+/****** CallToAction ******/
+
+.cta {
+	margin-top: 2.5rem;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+/****** Socials ******/
+
+.header__socials {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	left: 4rem;
+	position: fixed;
+}
+
+.header__socials::after {
+	background: var(--color-primary);
+	content: "";
+	height: 5rem;
+	width: 1.5px;
+}
+
+/****** moon img ******/
+
+.moon {
+	border-radius: 1rem;
+	height: 22rem;
+	left: calc(50% - 11rem);
+	margin-top: 7rem;
+	position: absolute;
+	transition: all 100000ms ease;
+	width: 22rem;
+}
+
+.moon:hover {
+	transform: rotate(360deg);
+}
+
+/****** for tablet ******/
+
+@media screen and (max-width: 1024px) {
+	header {
+		height: 90vh;
+		margin-top: 5rem;
+	}
+
+	.moon {
+		margin-bottom: 2rem;
+	}
+}
+
+/****** for mobile ******/
+
+@media screen and (max-width: 600px) {
+	header {
+		height: 100vh;
+		margin-top: 1rem;
+	}
+
+	.header__socials {
+		display: none;
+	}
+
+	.moon {
+		height: 18rem;
+		left: calc(50% - 9rem);
+		width: 18rem;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.moon {
+		height: 12rem;
+		left: calc(50% - 6rem);
+		width: 12rem;
+	}
+}

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=PT+Mono&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	list-style: none;
+	text-decoration: none;
+}
+
+:root {
+	--color-bg: #012347;
+	--color-bg-variant: #122c47;
+	--color-primary: #4db5ff;
+	--color-primary-variant: rgba(77, 181, 255, 0.4);
+	--color-white: #fff;
+	--color-light: rgba(255, 255, 255, 0.6);
+
+	--container-width-lg: 75%;
+	--container-width-md: 86%;
+	--container-width-sm: 90%;
+
+	--transition: all 400ms ease;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	background-color: var(--color-bg);
+	color: var(--color-white);
+	background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+	font-family: "Asap", sans-serif;
+	line-height: 1.7;
+}
+
+.container {
+	width: var(--container-width-lg);
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "PT Mono", monospace;
+	font-size: 2.5rem;
+}
+
+h2,
+h5 {
+	color: var(--color-light);
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+h5,
+p {
+	font-size: 1.2rem;
+}
+
+section {
+	margin-top: 12rem;
+}
+
+section h2 {
+	color: var(--color-primary);
+	font-family: "PT Mono", monospace;
+	margin-bottom: 3rem;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+a {
+	color: var(--color-primary);
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--color-white);
+}
+
+textarea {
+	font-family: "Asap", sans-serif;
+}
+
+.btn {
+	color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+	border-radius: 0.4rem;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.75rem 1.2rem;
+	transition: var(--transition);
+	width: max-content;
+}
+
+.btn:hover {
+	background: var(--color-white);
+	color: var(--color-bg);
+	border-color: transparent;
+}
+
+.btn-primary {
+	background: var(--color-primary);
+	color: var(--color-bg);
+}
+
+.text-light {
+	color: var(--color-light);
+}
+
+/************ For tablet ***********/
+@media screen and (max-width: 1024px) {
+	.container {
+		width: var(--container-width-md);
+	}
+}
+
+/************ For mobile ***********/
+@media screen and (max-width: 600px) {
+	.container {
+		width: var(--container-width-sm);
+	}
+
+	section {
+		margin-bottom: 2rem;
+	}
+}
