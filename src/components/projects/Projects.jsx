@@ -19,7 +19,7 @@ function Projects() {
 			id: 3,
 			title: "Portfolio",
 			stack: "React | HTML | CSS",
-			github: "",
+			github: "https://github.com/toco-t/react-portfolio-v2.0",
 		}
 	];
 
