@@ -2,6 +2,12 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
+const {
+	VITE_EMAILJS_SERVICE_ID,
+	VITE_EMAILJS_TEMPLATE_ID,
+	VITE_EMAILJS_USER_ID
+} = import.meta.env;
+
 function Contact() {
 	const form = useRef();
 
@@ -10,10 +16,10 @@ function Contact() {
 
 		emailjs
 			.sendForm(
-				process.env.REACT_APP_SERVICE_ID,
-				process.env.REACT_APP_TEMPLATE_ID,
+				VITE_EMAILJS_SERVICE_ID,
+				VITE_EMAILJS_TEMPLATE_ID,
 				form.current,
-				process.env.REACT_APP_KEY
+				VITE_EMAILJS_USER_ID
 			)
 			.then(
 				(result) => {

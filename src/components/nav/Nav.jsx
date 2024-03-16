@@ -20,7 +20,7 @@ function Nav() {
 				className={checkState("#")}
 			>
 				<IoEarth size={size} />
-				<label htmlFor="#header">Home</label>
+				<label>Home</label>
 			</a>
 			<a
 				href="#about"
@@ -28,7 +28,7 @@ function Nav() {
 				className={checkState("about")}
 			>
 				<GiNightSky size={size} />
-				<label htmlFor="#about">About</label>
+				<label>About</label>
 			</a>
 			<a
 				href="#skills"
@@ -36,7 +36,7 @@ function Nav() {
 				className={checkState("skills")}
 			>
 				<GiKnockedOutStars size={size} />
-				<label htmlFor="#skills">Skills</label>
+				<label>Skills</label>
 			</a>
 			<a
 				href="#projects"
@@ -44,7 +44,7 @@ function Nav() {
 				className={checkState("projects")}
 			>
 				<GiDeathStar size={size} />
-				<label htmlFor="#projects">Projects</label>
+				<label>Projects</label>
 			</a>
 			<a
 				href="#contact"
@@ -52,7 +52,7 @@ function Nav() {
 				className={checkState("contact")}
 			>
 				<SiStarship size={size} />
-				<label htmlFor="#contact">Contact</label>
+				<label>Contact</label>
 			</a>
 		</nav>
 	);
