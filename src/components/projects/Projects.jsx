@@ -7,7 +7,7 @@ function Projects() {
 			id: 1,
 			title: "Predictive Regression/Classification Model",
 			stack: "Python | pandas | scikit-learn | matplotlib | seaborn",
-			github: "",
+			github: "https://github.com/toco-t/predictive-regression-model",
 		},
 		{
 			id: 2,
